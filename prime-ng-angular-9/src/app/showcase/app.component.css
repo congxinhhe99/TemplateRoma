@@ -1195,9 +1195,9 @@ a {
     transition: transform 0.2s;
 }
 
-.layout-wrapper .layout-topbar .topbar-menu .user-profile a {
+/* .layout-wrapper .layout-topbar .topbar-menu .user-profile a {
     height: 36px;
-}
+} */
 
 .layout-wrapper .layout-topbar .topbar-menu .user-profile a i {
     vertical-align: middle;
@@ -1225,7 +1225,7 @@ a {
     position: relative;
 }
 
-.layout-wrapper .layout-topbar .topbar-menu>li>a {
+/* .layout-wrapper .layout-topbar .topbar-menu>li>a {
     position: relative;
     display: block;
     text-align: center;
@@ -1236,7 +1236,7 @@ a {
     -o-transition: background-color 0.2s;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
-}
+} */
 
 .layout-wrapper .layout-topbar .topbar-menu>li>a .topbar-icon {
     width: 45px;

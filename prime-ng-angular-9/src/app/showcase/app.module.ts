@@ -18,7 +18,10 @@ import { CustomerService } from './service/customerservice';
 import { PhotoService } from './service/photoservice';
 import { VersionService } from './service/versionservice';
 import { AppConfigComponent } from './app.config.component';
+import {MenuModule} from 'primeng/menu';
 
+import { ButtonModule } from 'primeng/button';
+// import { RippleModule } from 'primeng/ripple';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,9 @@ import { AppConfigComponent } from './app.config.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    MenuModule,
+    ButtonModule
   ],
   providers: [
       { provide: LocationStrategy, useClass: HashLocationStrategy },

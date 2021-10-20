@@ -15,15 +15,15 @@
             <input type="text" placeholder="Enter your search term">
         </span>
 
-        <ul class="topbar-menu fadeInDown">
-            <li class="user-profile">
+        <ul class="topbar-menu fadeInDown"   (click)="menu.toggle($event)">
+            <li class="user-profile" >
                 <a href="#"><img id="j_idt18" src="https://www.primefaces.org/roma-ng/assets/layout/images/avatar.png" alt="">
                     <div class="layout-profile-userinfo">
                         <span class="layout-profile-name">Arlene Welch</span>
                         <span class="layout-profile-role">Design Ops</span>
                     </div>
                 </a>
-                <ul class="fadeInDown">
+                <!-- <ul class="fadeInDown"  #menu [popup]="true" [model]="items">
                     <li>
                         <a href="#">
                             <i class="pi pi-user"></i>
@@ -48,7 +48,7 @@
                             <span>Notifications</span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </li>
             <li class="">
                 <a href="#" class="layout-topbar-icon">
@@ -99,6 +99,8 @@
                 </ul>
             </li>
         </ul>
+        <p-menu #menu [popup]="true" [model]="items"></p-menu>
+
     </div>
 
     <div class="layout-menu-container">
@@ -1807,7 +1809,7 @@
 </div> -->
 
         <div class="layout-footer">
-            <div><img id="j_idt193" src="/roma/javax.faces.resource/images/logo-roma.svg.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
+            <div><img id="j_idt193" src="https://www.primefaces.org/roma-ng/assets/layout/images/logo-roma.svg" alt="">
                 <p>Premium PrimeFaces Application Template</p>
             </div>
             <div class="footer-icons">
@@ -1830,4 +1832,4 @@
             <i class="pi pi-spin pi-spinner layout-ajax-loader-icon" aria-hidden="true"></i></div>
         <div id="j_idt196_complete" style=""></div>
     </div>
-</div>                                                                                                                   
+</div>
