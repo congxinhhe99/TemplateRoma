@@ -1195,6 +1195,7 @@ a {
     transition: transform 0.2s;
 }
 
+
 /* .layout-wrapper .layout-topbar .topbar-menu .user-profile a {
     height: 36px;
 } */
@@ -1224,6 +1225,7 @@ a {
     float: right;
     position: relative;
 }
+
 
 /* .layout-wrapper .layout-topbar .topbar-menu>li>a {
     position: relative;
@@ -12889,3 +12891,22 @@ body .ui-wizard .ui-icon-arrowthick-1-e:before {
 
 
 /* Add your customizations of theme here */
+
+.topbar-menu>li>a:hover {
+    background: none !important;
+}
+
+.ui-tieredmenu.ui-tieredmenu-dynamic {
+    position: absolute;
+    margin-left: 57px;
+    margin-top: -57px;
+}
+
+:host ::ng-deep .menucus {
+    margin-left: 57px;
+    margin-top: -126px;
+}
+
+:host ::ng-deep .menucus :hover {
+    color: #0c799f;
+}

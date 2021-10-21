@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy, CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -19,14 +19,24 @@ import { PhotoService } from './service/photoservice';
 import { VersionService } from './service/versionservice';
 import { AppConfigComponent } from './app.config.component';
 import {MenuModule} from 'primeng/menu';
-
+import {TieredMenuModule} from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
+import { FormLayoutComponent } from './form-layout/form-layout.component';
+import { FormLayoutDemoRoutingModule } from './components/formlayout/formlayout-routing.module';
+import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
+import { CodeHighlighterModule } from 'primeng/codehighlighter';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { DropdownModule } from 'primeng/dropdown';
+import { CheckboxModule } from 'primeng/checkbox';
 // import { RippleModule } from 'primeng/ripple';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AppConfigComponent
+    AppConfigComponent,
+    FormLayoutComponent
   ],
   imports: [
     FormsModule,
@@ -36,7 +46,18 @@ import { ButtonModule } from 'primeng/button';
     BrowserAnimationsModule,
     AutoCompleteModule,
     MenuModule,
-    ButtonModule
+    ButtonModule,
+    TieredMenuModule,
+    CommonModule,
+		InputTextModule,
+		CheckboxModule,
+		ButtonModule,
+        TabViewModule,
+		CodeHighlighterModule,
+		RadioButtonModule,
+		InputTextareaModule,
+		DropdownModule,
+		FormsModule
   ],
   providers: [
       { provide: LocationStrategy, useClass: HashLocationStrategy },
