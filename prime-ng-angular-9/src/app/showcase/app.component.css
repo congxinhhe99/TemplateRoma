@@ -12907,6 +12907,7 @@ body .ui-wizard .ui-icon-arrowthick-1-e:before {
     margin-top: -126px;
 }
 
-:host ::ng-deep .menucus :hover {
-    color: #0c799f;
+:host ::ng-deep .personal {
+    margin-top: 24px;
+    width: 230px;
 }
