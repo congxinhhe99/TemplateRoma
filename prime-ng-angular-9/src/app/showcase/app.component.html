@@ -50,11 +50,13 @@
                     </li>
                 </ul> -->
             </li>
-            <li class="">
-                <a href="#" class="layout-topbar-icon">
+            <li (click)="menu.toggle($event)">
+                <a href="#" class="layout-topbar-icon" >
                     <i class="topbar-icon pi pi-bell"></i>
                 </a>
-                <ul class="fadeInDown">
+
+
+                <!-- <ul class="fadeInDown">
                     <li role="menuitem">
                         <a href="#"><img id="j_idt21" src="/roma/javax.faces.resource/images/avatar/avatar-1.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
                             <div class="topbar-menu-info">
@@ -96,10 +98,11 @@
 
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </li>
         </ul>
 
+        <p-menu styleClass="personal" #menu [popup]="true" [model]="items"></p-menu>
         <p-menu styleClass="personal" #menu [popup]="true" [model]="items"></p-menu>
 
     </div>
@@ -489,6 +492,8 @@
             </form>
         </div>
     </div>
+
+
     <div class="content">
         <router-outlet></router-outlet>
     </div>

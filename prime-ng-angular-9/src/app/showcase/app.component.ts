@@ -96,6 +96,7 @@ export class AppComponent implements OnInit {
 
     @ViewChild("topbarMenu") topbarMenu: ElementRef;
     items: MenuItem[];
+    itemsNotifications: MenuItem[];
     menuSideBarFavorites: MenuItem[];
     menuSideBarUI: MenuItem[];
     Notifications: MenuItem[];
@@ -130,6 +131,29 @@ export class AppComponent implements OnInit {
         }
 
         this.items = [
+            {
+                items: [
+                    {
+                        label: "Profile",
+                        icon: "pi pi-user",
+                    },
+                    {
+                        label: "Settings",
+                        icon: "pi pi-cog",
+                    },
+                    {
+                        label: "Messages",
+                        icon: "pi pi-envelope",
+                    },
+                    {
+                        label: "Notifications",
+                        icon: "pi pi-bell",
+                    },
+
+                ],
+            },
+        ];
+        this.itemsNotifications = [
             {
                 items: [
                     {
