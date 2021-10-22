@@ -160,20 +160,18 @@ export class AppComponent implements OnInit {
             {
                 items: [
                     {
-                        label: "Profile",
-                        icon: "pi pi-user",
+                        label: "Bithika Abhedananda User interface review is done.",
+
                     },
                     {
-                        label: "Settings",
-                        icon: "pi pi-cog",
+                        label: "Dai Jiang Uh, we have sort of a problem here.",
                     },
                     {
-                        label: "Messages",
-                        icon: "pi pi-envelope",
+                        label: "Karlien Nijhuis You apparently didn’t put the thing",
                     },
                     {
-                        label: "Notifications",
-                        icon: "pi pi-bell",
+                        label: "Please check the files",
+                        
                     },
 
                 ],

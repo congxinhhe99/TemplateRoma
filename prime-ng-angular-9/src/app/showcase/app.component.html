@@ -50,8 +50,8 @@
                     </li>
                 </ul> -->
             </li>
-            <li (click)="menu.toggle($event)">
-                <a href="#" class="layout-topbar-icon" >
+            <li (click)="menuNotifications.toggle($event)">
+                <a href="#" class="layout-topbar-icon">
                     <i class="topbar-icon pi pi-bell"></i>
                 </a>
 
@@ -101,9 +101,8 @@
                 </ul> -->
             </li>
         </ul>
-
         <p-menu styleClass="personal" #menu [popup]="true" [model]="items"></p-menu>
-        <p-menu styleClass="personal" #menu [popup]="true" [model]="items"></p-menu>
+        <p-menu styleClass="menu__notifications" #menuNotifications [popup]="true" [model]="itemsNotifications"></p-menu>
 
     </div>
 
