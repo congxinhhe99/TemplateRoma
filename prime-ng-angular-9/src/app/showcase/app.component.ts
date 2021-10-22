@@ -98,6 +98,9 @@ export class AppComponent implements OnInit {
     items: MenuItem[];
     menuSideBarFavorites: MenuItem[];
     menuSideBarUI: MenuItem[];
+    menuSideBarUtilities: MenuItem[];
+    menuSideBarPages: MenuItem[];
+    menuSideBarbuynow: MenuItem[];
     Notifications: MenuItem[];
 
     constructor(
@@ -369,6 +372,111 @@ export class AppComponent implements OnInit {
                 icon: 'pi pi-fw pi-circle-off',
 
             },
+
+        ];
+        this.menuSideBarUtilities = [
+            {
+                label: 'Display',
+                icon: "pi pi-fw pi-desktop",
+            },
+            {
+                label: 'Elevation',
+                icon: 'pi pi-fw pi-external-link',
+
+            },
+            {
+                label: 'FlexBox',
+                icon: 'pi pi-fw pi-directions',
+
+            },
+            {
+                label: 'Text',
+                icon: 'pi pi-fw pi-search',
+
+            },
+            {
+                label: 'Widgets',
+                icon: 'pi pi-fw pi-star-o',
+
+            },
+            {
+                label: 'Grid System',
+                icon: 'pi pi-fw pi-th-large',
+
+            },
+            {
+                label: 'Spacing',
+                icon: 'pi pi-fw pi-arrow-right',
+
+            },
+            {
+                label: 'Typography',
+                icon: 'pi pi-fw pi-align-center',
+
+            },
+
+
+        ];
+        this.menuSideBarPages = [
+            {
+                label: 'Crud',
+                icon: "pi pi-fw pi-pencil",
+            },
+            {
+                label: 'Calendar',
+                icon: 'pi pi-fw pi-calendar-plus',
+
+            },
+            {
+                label: 'Timeline',
+                icon: 'pi pi-fw pi-calendar',
+
+            },
+            {
+                label: 'Landing',
+                icon: 'pi pi-fw pi-globe',
+
+            },
+            {
+                label: 'Login',
+                icon: 'pi pi-fw pi-sign-in',
+
+            },
+            {
+                label: 'Error',
+                icon: 'pi pi-fw pi-exclamation-triangle',
+
+            },
+            {
+                label: '404',
+                icon: 'pi pi-fw pi-times',
+
+            },
+            {
+                label: 'Access Denied',
+                icon: 'pi pi-fw pi-ban',
+
+            },
+            {
+                label: 'Empty',
+                icon: 'pi pi-fw pi-clone',
+
+            },
+
+
+        ];
+        this.menuSideBarbuynow = [
+            {
+                label: 'Buy Now',
+                icon: "pi pi-fw pi-shopping-cart",
+            },
+            {
+                label: 'Documentation',
+                icon: 'pi pi-fw pi-info-circle',
+
+            },
+
+
 
         ];
 

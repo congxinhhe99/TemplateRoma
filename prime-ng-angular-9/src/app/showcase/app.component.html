@@ -127,6 +127,9 @@
                     </li>
                     <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarFr [model]="menuSideBarFavorites" [popup]="true"></p-tieredMenu>
                     <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarUI [model]="menuSideBarUI" [popup]="true"></p-tieredMenu>
+                    <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarUtilities [model]="menuSideBarUtilities" [popup]="true"></p-tieredMenu>
+                    <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarPages [model]="menuSideBarPages" [popup]="true"></p-tieredMenu>
+                    <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarBuynow [model]="menuSideBarbuynow" [popup]="true"></p-tieredMenu>
 
                     <li id="menuform:om_components" role="menuitem" class="layout-root-menuitem" (click)="sidebarUI.toggle($event)">
                         <div class="layout-menuitem-root-text">UI Kit</div><a href="#"><i class="pi pi-fw pi-star layout-menuitem-icon"></i><span class="layout-menuitem-text">UI Kit</span><i class="pi pi-angle-down layout-submenu-toggler"></i></a>
@@ -227,7 +230,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="menuform:om_utils" role="menuitem" class="layout-root-menuitem">
+                    <li id="menuform:om_utils" role="menuitem" class="layout-root-menuitem" (click)="sidebarUtilities.toggle($event)">
                         <div class="layout-menuitem-root-text">Utilities</div><a href="#"><i class="pi pi-fw pi-compass layout-menuitem-icon"></i><span class="layout-menuitem-text">Utilities</span><i class="pi pi-angle-down layout-submenu-toggler"></i></a>
                         <div class="layout-menu-tooltip">
                             <div class="layout-menu-tooltip-arrow"></div>
@@ -290,7 +293,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="menuform:om_default" role="menuitem" class="layout-root-menuitem">
+                    <li id="menuform:om_default" role="menuitem" class="layout-root-menuitem" (click)="sidebarPages.toggle($event)">
                         <div class="layout-menuitem-root-text">Pages</div><a href="#"><i class="pi pi-fw pi-briefcase layout-menuitem-icon"></i><span class="layout-menuitem-text">Pages</span><i class="pi pi-angle-down layout-submenu-toggler"></i></a>
                         <div class="layout-menu-tooltip">
                             <div class="layout-menu-tooltip-arrow"></div>
@@ -464,7 +467,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="menuform:om_getstarted" role="menuitem" class="layout-root-menuitem">
+                    <li id="menuform:om_getstarted" role="menuitem" class="layout-root-menuitem" (click)="sidebarBuynow.toggle($event)">
                         <div class="layout-menuitem-root-text">Start</div><a href="#"><i class="pi pi-fw pi-download layout-menuitem-icon"></i><span class="layout-menuitem-text">Start</span><i class="pi pi-angle-down layout-submenu-toggler"></i></a>
                         <div class="layout-menu-tooltip">
                             <div class="layout-menu-tooltip-arrow"></div>
