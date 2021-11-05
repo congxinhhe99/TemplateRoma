@@ -322,6 +322,7 @@ export class AppComponent implements OnInit {
             {
                 label: 'input',
                 icon: 'pi pi-fw pi-check-square',
+                routerLink: ['input-layout']
 
             },
             {

@@ -34,11 +34,31 @@ import { InputTextareaModule } from "primeng/inputtextarea";
 import { DropdownModule } from "primeng/dropdown";
 import { CheckboxModule } from "primeng/checkbox";
 // import { RippleModule } from 'primeng/ripple';
-import {ChartModule} from 'primeng/chart';
 
-import {ProgressBarModule} from 'primeng/progressbar';
+import { SliderModule } from "primeng/slider";
+import { ChartModule } from "primeng/chart";
+import { RatingModule } from "primeng/rating";
+import { ProgressBarModule } from "primeng/progressbar";
+import { InputLayoutComponent } from "./input-layout/input-layout.component";
+import { ChipsModule } from "primeng/chips";
+import { InputNumberModule } from "primeng/inputnumber";
+import { CalendarModule } from "primeng/calendar";
+import { ColorPickerModule } from "primeng/colorpicker";
+import { InputSwitchModule } from "primeng/inputswitch";
+import { ListboxModule } from "primeng/listbox";
+import { MultiSelectModule } from "primeng/multiselect";
+import { ToggleButtonModule } from "primeng/togglebutton";
+import { SelectButtonModule } from "primeng/selectbutton";
+
+
 @NgModule({
-    declarations: [AppComponent, HomeComponent, AppConfigComponent, FormLayoutComponent],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        AppConfigComponent,
+        FormLayoutComponent,
+        InputLayoutComponent,
+    ],
     imports: [
         FormsModule,
         ReactiveFormsModule,
@@ -60,7 +80,18 @@ import {ProgressBarModule} from 'primeng/progressbar';
         DropdownModule,
         FormsModule,
         ChartModule,
-        ProgressBarModule
+        ProgressBarModule,
+        RatingModule,
+        SliderModule,
+        ChipsModule,
+        InputNumberModule,
+        CalendarModule,
+        ColorPickerModule,
+        InputSwitchModule,
+        ListboxModule,
+        MultiSelectModule,
+        ToggleButtonModule,
+        SelectButtonModule,
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

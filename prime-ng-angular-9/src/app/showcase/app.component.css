@@ -2348,6 +2348,7 @@ a {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    /* margin-top: 200px; */
 }
 
 .layout-footer img {
@@ -12953,4 +12954,10 @@ body .ui-wizard .ui-icon-arrowthick-1-e:before {
     width: 20px;
     border-radius: 50%;
     margin: 0px 5px 5px 5px;
+}
+
+.content {
+    margin-top: 100px;
+    margin-left: 75 px;
+    height: 700px;
 }
