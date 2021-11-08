@@ -4,6 +4,7 @@ import {CarService} from '../../service/carservice';
 import {SelectItem} from 'primeng/api';
 
 @Component({
+    selector:'app-dataview',
     templateUrl: './dataviewdemo.html',
     styles: [`      
         .filter-container {

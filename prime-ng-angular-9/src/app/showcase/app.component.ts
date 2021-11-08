@@ -341,42 +341,52 @@ export class AppComponent implements OnInit {
             {
                 label: "List",
                 icon: "pi pi-fw pi-list",
+                routerLink:['list']
             },
             {
                 label: "Tree",
                 icon: "pi pi-fw pi-share-alt",
+                routerLink:['tree']
             },
             {
                 label: "Panel",
                 icon: "pi pi-fw pi-tablet",
+                routerLink:['panel']
             },
             {
                 label: "Overlay",
                 icon: "pi pi-fw pi-clone",
+                routerLink:['overlaypanel']
             },
             {
                 label: "Media",
                 icon: "pi pi-fw pi-image",
+                routerLink:['media']
             },
             {
                 label: "Menu",
                 icon: "pi pi-fw pi-bars",
+                routerLink:['menu']
             },
             {
                 label: "Message",
                 icon: "pi pi-fw pi-comment",
+                routerLink:['messages']
             },
             {
                 label: "File",
                 icon: "pi pi-fw pi-file",
+                routerLink:['fileupload']
             },
             {
                 label: "Chart",
                 icon: "pi pi-fw pi-chart-bar",
+                routerLink:['chart']
             },
             {
                 label: "Misc",
                 icon: "pi pi-fw pi-circle-off",
+                routerLink:['misc']
             },
         ];
         this.menuSideBarUtilities = [

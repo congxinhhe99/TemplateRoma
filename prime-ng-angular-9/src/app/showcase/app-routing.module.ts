@@ -1,3 +1,5 @@
+import { MiscModule } from './misc/misc.module';
+import { MiscComponent } from './misc/misc.component';
 import { FormLayoutComponent } from "./form-layout/form-layout.component";
 import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
@@ -24,6 +26,23 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                         import("./float-label/float-label.module").then(
                             (m) => m.FloatLabelModule
                         ),
+                },
+                {
+                    path: "list",
+                    loadChildren: () =>
+                        import("./list/list.module").then((m) => m.ListModule),
+                },
+                {
+                    path: "media",
+                    loadChildren: () =>
+                        import("./media/media.module").then(
+                            (m) => m.MediaModule
+                        ),
+                },
+                {
+                    path: "menu",
+                    loadChildren: () =>
+                        import("./menu/menu.module").then((m) => m.MenuModule),
                 },
                 {
                     path: "setup",
@@ -102,13 +121,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             (m) => m.CardDemoModule
                         ),
                 },
-                {
-                    path: "carousel",
-                    loadChildren: () =>
-                        import(
-                            "./components/carousel/carouseldemo.module"
-                        ).then((m) => m.CarouselDemoModule),
-                },
+
                 {
                     path: "chart",
                     loadChildren: () =>
@@ -158,13 +171,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             "./components/contextmenu/contextmenudemo.module"
                         ).then((m) => m.ContextMenuDemoModule),
                 },
-                {
-                    path: "dataview",
-                    loadChildren: () =>
-                        import(
-                            "./components/dataview/dataviewdemo.module"
-                        ).then((m) => m.DataViewDemoModule),
-                },
+
                 {
                     path: "defer",
                     loadChildren: () =>
@@ -298,7 +305,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             "./components/inputswitch/inputswitchdemo.module"
                         ).then((m) => m.InputSwitchDemoModule),
                 },
-              
+
                 {
                     path: "inputgroup",
                     loadChildren: () =>
@@ -341,13 +348,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             (m) => m.LTSModule
                         ),
                 },
-                {
-                    path: "megamenu",
-                    loadChildren: () =>
-                        import(
-                            "./components/megamenu/megamenudemo.module"
-                        ).then((m) => m.MegaMenuDemoModule),
-                },
+
                 {
                     path: "menu",
                     loadChildren: () =>
@@ -356,12 +357,13 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                         ),
                 },
                 {
-                    path: "menubar",
+                    path: "misc",
                     loadChildren: () =>
-                        import("./components/menubar/menubardemo.module").then(
-                            (m) => m.MenubarDemoModule
+                        import("./misc/misc.module").then(
+                            (m) => m.MiscModule
                         ),
                 },
+
                 {
                     path: "menumodel",
                     loadChildren: () =>
@@ -432,20 +434,8 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             "./components/password/passworddemo.module"
                         ).then((m) => m.PasswordDemoModule),
                 },
-                {
-                    path: "picklist",
-                    loadChildren: () =>
-                        import(
-                            "./components/picklist/picklistdemo.module"
-                        ).then((m) => m.PickListDemoModule),
-                },
-                {
-                    path: "progressbar",
-                    loadChildren: () =>
-                        import(
-                            "./components/progressbar/progressbardemo.module"
-                        ).then((m) => m.ProgressBarDemoModule),
-                },
+
+              
                 {
                     path: "progressspinner",
                     loadChildren: () =>
@@ -453,7 +443,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                             "./components/progressspinner/progressspinnerdemo.module"
                         ).then((m) => m.ProgressSpinnerDemoModule),
                 },
-                
+
                 {
                     path: "rating",
                     loadChildren: () =>

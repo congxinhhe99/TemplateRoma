@@ -3,6 +3,7 @@ import {Car} from '../../components/domain/car';
 import {CarService} from '../../service/carservice';
 
 @Component({
+    selector:'app-picklist',
     templateUrl: './picklistdemo.html'
 })
 export class PickListDemo {

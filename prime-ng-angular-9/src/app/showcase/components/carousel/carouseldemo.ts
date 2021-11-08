@@ -2,6 +2,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 import { CarService } from '../../service/carservice';
 
 @Component({
+	selector:'app-carousel',
     templateUrl: './carouseldemo.html',
     styles: [`
 		.carousel-demo .ui-carousel .ui-carousel-content .ui-carousel-item .car-details > .p-grid {

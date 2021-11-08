@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {MegaMenuItem} from 'primeng/api';
 
 @Component({
+    selector:'app-megamenu',
     templateUrl: './megamenudemo.html'
 })
 export class MegaMenuDemo {
