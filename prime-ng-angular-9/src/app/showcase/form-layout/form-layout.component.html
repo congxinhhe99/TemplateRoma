@@ -1,218 +1,68 @@
-<div class="content-section implementation layout__form">
-    <div class="ui-fluid">
-        <div class="p-field">
-            <label for="firstname1">Firstname</label>
-            <input id="firstname1" type="text" pInputText />
-        </div>
-        <div class="p-field">
-            <label for="lastname1">Lastname</label>
-            <input id="lastname1" type="text" pInputText />
-        </div>
-    </div>
-
-    <div class="ui-fluid p-formgrid p-grid">
-        <div class="p-field p-col">
-            <label for="firstname2">Firstname</label>
-            <input id="firstname2" type="text" pInputText />
-        </div>
-        <div class="p-field p-col">
-            <label for="lastname2">Lastname</label>
-            <input id="lastname2" type="text" pInputText />
-        </div>
-    </div>
-
-    <h3>Horizontal and Fixed Width</h3>
-    <div class="p-field p-grid">
-        <label for="firstname3" class="p-col-fixed" style="width: 100px"
-            >Firstname</label
-        >
-        <div class="p-col">
-            <input id="firstname3" type="text" pInputText />
-        </div>
-    </div>
-    <div class="p-field p-grid">
-        <label for="lastname3" class="p-col-fixed" style="width: 100px"
-            >Lastname</label
-        >
-        <div class="p-col">
-            <input id="lastname3" type="text" pInputText />
-        </div>
-    </div>
-
-    <h3>Horizontal and Fluid</h3>
-    <div class="ui-fluid">
-        <div class="p-field p-grid">
-            <label for="firstname4" class="p-col-12 p-md-2">Firstname</label>
-            <div class="p-col-12 p-md-10">
-                <input id="firstname4" type="text" pInputText />
+<div class="p-grid container__form-layout">
+    <div class="p-col-12 p-md-6">
+        <div class="card">
+            <h5>Vertical</h5>
+            <div class="p-fluid">
+                <div class="p-field"><label for="firstname1">Name</label><input id="firstname1" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field"><label for="lastname1">Email</label><input id="lastname1" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field"><label for="age1">Age</label><input id="age1" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
             </div>
         </div>
-        <div class="p-field p-grid">
-            <label for="lastname4" class="p-col-12 p-md-2">Lastname</label>
-            <div class="p-col-12 p-md-10">
-                <input id="lastname4" type="text" pInputText />
+        <div class="card">
+            <h5>Vertical Grid</h5>
+            <div class="p-fluid p-formgrid p-grid">
+                <div class="p-field p-col"><label for="firstname2">Name</label><input id="firstname2" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field p-col"><label for="lastname2">Email</label><input id="lastname2" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
             </div>
         </div>
     </div>
-
-    <h3>Inline</h3>
-    <div class="p-formgroup-inline">
-        <div class="p-field">
-            <label for="firstname5" class="p-sr-only">Firstname</label>
-            <input
-                id="firstname5"
-                type="text"
-                pInputText
-                placeholder="Firstname"
-            />
+    <div class="p-col-12 p-md-6">
+        <div class="card">
+            <h5>Horizontal</h5>
+            <div class="p-fluid">
+                <div class="p-field p-grid"><label for="firstname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Name</label>
+                    <div class="p-col-12 p-md-10"><input id="firstname4" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                </div>
+                <div class="p-field p-grid"><label for="lastname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Email</label>
+                    <div class="p-col-12 p-md-10"><input id="lastname4" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                </div>
+            </div>
         </div>
-        <div class="p-field">
-            <label for="lastname5" class="p-sr-only">Lastname</label>
-            <input
-                id="lastname5"
-                type="text"
-                pInputText
-                placeholder="Lastname"
-            />
+        <div class="card">
+            <h5>Inline</h5>
+            <div class="p-formgroup-inline">
+                <div class="p-field"><label for="firstname5" class="p-sr-only">Firstname</label><input id="firstname5" type="text" pinputtext="" placeholder="Firstname" class="p-inputtext p-component p-element"></div>
+                <div class="p-field"><label for="lastname5" class="p-sr-only">Lastname</label><input id="lastname5" type="text" pinputtext="" placeholder="Lastname" class="p-inputtext p-component p-element"></div><button pbutton="" pripple="" type="button" label="Submit"
+                    class="p-element p-ripple p-button p-component"><span class="p-button-label">Submit</span><span class="p-ink"></span></button></div>
         </div>
-        <button pButton type="button" label="Submit"></button>
-    </div>
-
-    <h3>Vertical Checkbox</h3>
-    <div class="p-field-checkbox">
-        <p-checkbox
-            name="city1"
-            value="Chicago"
-            [(ngModel)]="cities1"
-            inputId="city1"
-        ></p-checkbox>
-        <label for="city1">Chicago</label>
-    </div>
-    <div class="p-field-checkbox">
-        <p-checkbox
-            name="city2"
-            value="Los Angeles"
-            [(ngModel)]="cities1"
-            inputId="city2"
-        ></p-checkbox>
-        <label for="city2">Los Angeles</label>
-    </div>
-
-    <h3>Horizontal Checkbox</h3>
-    <div class="p-formgroup-inline">
-        <div class="p-field-checkbox">
-            <p-checkbox
-                name="city3"
-                value="Chicago"
-                [(ngModel)]="cities2"
-                inputId="city3"
-            ></p-checkbox>
-            <label for="city3">Chicago</label>
-        </div>
-        <div class="p-field-checkbox">
-            <p-checkbox
-                name="city4"
-                value="Los Angeles"
-                [(ngModel)]="cities2"
-                inputId="city4"
-            ></p-checkbox>
-            <label for="city4">Los Angeles</label>
+        <div class="card">
+            <h5>Help Text</h5>
+            <div class="p-field p-fluid"><label for="username">Username</label><input id="username" type="username" pinputtext="" aria-describedby="username-help" class="p-inputtext p-component p-element"><small id="username-help">Enter your username to reset your password.</small></div>
         </div>
     </div>
-
-    <h3>Vertical RadioButton</h3>
-    <div class="p-field-radiobutton">
-        <p-radioButton
-            name="city5"
-            value="Chicago"
-            [(ngModel)]="city1"
-            inputId="city5"
-        ></p-radioButton>
-        <label for="city5">Chicago</label>
-    </div>
-    <div class="p-field-radiobutton">
-        <p-radioButton
-            name="city6"
-            value="Los Angeles"
-            [(ngModel)]="city1"
-            inputId="city6"
-        ></p-radioButton>
-        <label for="city6">Los Angeles</label>
-    </div>
-
-    <h3>Horizontal RadioButton</h3>
-    <div class="p-formgroup-inline">
-        <div class="p-field-checkbox">
-            <p-radioButton
-                name="city7"
-                value="Chicago"
-                [(ngModel)]="city2"
-                inputId="city7"
-            ></p-radioButton>
-            <label for="city7">Chicago</label>
-        </div>
-        <div class="p-field-checkbox">
-            <p-radioButton
-                name="city8"
-                value="Los Angeles"
-                [(ngModel)]="city2"
-                inputId="city8"
-            ></p-radioButton>
-            <label for="city8">Los Angeles</label>
-        </div>
-    </div>
-
-    <h3>Help Text</h3>
-    <div class="p-field ui-fluid">
-        <label for="username">Username</label>
-        <input
-            id="username"
-            type="username"
-            pInputText
-            aria-describedby="username-help"
-        />
-        <small id="username-help"
-            >Enter your username to reset your password.</small
-        >
-    </div>
-
-    <h3>Advanced</h3>
-    <div class="ui-fluid p-formgrid p-grid">
-        <div class="p-field p-col-12 p-md-6">
-            <label for="firstname6">Firstname</label>
-            <input id="firstname6" type="text" pInputText />
-        </div>
-        <div class="p-field p-col-12 p-md-6">
-            <label for="lastname6">Lastname</label>
-            <input id="lastname6" type="text" pInputText />
-        </div>
-        <div class="p-field p-col-12">
-            <label for="address">Address</label>
-            <textarea
-                id="address"
-                type="text"
-                rows="4"
-                pInputTextarea
-            ></textarea>
-        </div>
-        <div class="p-field p-col-12 p-md-6">
-            <label for="city">City</label>
-            <input id="city" type="text" pInputText />
-        </div>
-        <div class="p-field p-col-12 p-md-3">
-            <label for="state">State</label>
-            <p-dropdown
-                inputId="state"
-                [options]="states"
-                [(ngModel)]="selectedState"
-                placeholder="Select"
-                optionLabel="name"
-            ></p-dropdown>
-        </div>
-        <div class="p-field p-col-12 p-md-3">
-            <label for="zip">Zip</label>
-            <input id="zip" type="text" pInputText />
+    <div class="p-col-12">
+        <div class="card">
+            <h5>Advanced</h5>
+            <div class="p-fluid p-formgrid p-grid">
+                <div class="p-field p-col-12 p-md-6"><label for="firstname6">Firstname</label><input id="firstname6" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field p-col-12 p-md-6"><label for="lastname6">Lastname</label><input id="lastname6" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field p-col-12"><label for="address">Address</label><textarea id="address" type="text" rows="4" pinputtextarea="" class="p-inputtextarea p-inputtext p-component p-element"></textarea></div>
+                <div class="p-field p-col-12 p-md-6"><label for="city">City</label><input id="city" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+                <div class="p-field p-col-12 p-md-3"><label for="state">State</label>
+                    <p-dropdown inputid="state" placeholder="Select" optionlabel="name" class="p-element p-inputwrapper ng-tns-c34-52 ng-untouched ng-pristine ng-valid ng-star-inserted">
+                        <div class="ng-tns-c34-52 p-dropdown p-component">
+                            <div class="p-hidden-accessible ng-tns-c34-52"><input type="text" readonly="" aria-haspopup="listbox" role="listbox" class="ng-tns-c34-52" id="state" placeholder="Select" aria-activedescendant="pr_id_4_label"></div>
+                            <!----><span class="ng-tns-c34-52 p-dropdown-label p-inputtext p-placeholder ng-star-inserted">Select</span>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div role="button" aria-haspopup="listbox" class="p-dropdown-trigger ng-tns-c34-52"><span class="p-dropdown-trigger-icon ng-tns-c34-52 pi pi-chevron-down"></span></div>
+                            <!---->
+                        </div>
+                    </p-dropdown>
+                </div>
+                <div class="p-field p-col-12 p-md-3"><label for="zip">Zip</label><input id="zip" type="text" pinputtext="" class="p-inputtext p-component p-element"></div>
+            </div>
         </div>
     </div>
 </div>
-

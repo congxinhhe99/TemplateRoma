@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+    selector:'app-inputmask',
     templateUrl: './inputmaskdemo.html',
     styles: [`
         .p-col-12 > span {

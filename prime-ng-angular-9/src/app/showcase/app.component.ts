@@ -317,7 +317,7 @@ export class AppComponent implements OnInit {
             {
                 label: 'Form Layout',
                 icon: "pi pi-fw pi-id-card",
-                routerLink: ['form-layout']
+                routerLink: ['formlayout']
             },
             {
                 label: 'input',
@@ -328,6 +328,8 @@ export class AppComponent implements OnInit {
             {
                 label: 'Float Label',
                 icon: 'pi pi-bookmark',
+                routerLink: ['float-label']
+
 
             },
             {

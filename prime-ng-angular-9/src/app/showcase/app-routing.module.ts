@@ -1,4 +1,3 @@
-import { InputLayoutComponent } from './input-layout/input-layout.component';
 import { FormLayoutComponent } from "./form-layout/form-layout.component";
 import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
@@ -10,7 +9,20 @@ import { HomeComponent } from "./components/home/home.component";
             [
                 { path: "", component: HomeComponent },
                 { path: "form-layout", component: FormLayoutComponent },
-                { path: "input-layout", component: InputLayoutComponent },
+                {
+                    path: "input-layout",
+                    loadChildren: () =>
+                        import("./input-layout/input-layout.module").then(
+                            (m) => m.InputLayoutModule
+                        ),
+                },
+                {
+                    path: "float-label",
+                    loadChildren: () =>
+                        import("./float-label/float-label.module").then(
+                            (m) => m.FloatLabelModule
+                        ),
+                },
                 {
                     path: "setup",
                     loadChildren: () =>
@@ -284,13 +296,7 @@ import { HomeComponent } from "./components/home/home.component";
                             "./components/inputswitch/inputswitchdemo.module"
                         ).then((m) => m.InputSwitchDemoModule),
                 },
-                {
-                    path: "inputtext",
-                    loadChildren: () =>
-                        import(
-                            "./components/inputtext/inputtextdemo.module"
-                        ).then((m) => m.InputTextDemoModule),
-                },
+              
                 {
                     path: "inputgroup",
                     loadChildren: () =>
@@ -445,13 +451,7 @@ import { HomeComponent } from "./components/home/home.component";
                             "./components/progressspinner/progressspinnerdemo.module"
                         ).then((m) => m.ProgressSpinnerDemoModule),
                 },
-                {
-                    path: "radiobutton",
-                    loadChildren: () =>
-                        import(
-                            "./components/radiobutton/radiobuttondemo.module"
-                        ).then((m) => m.RadioButtonDemoModule),
-                },
+                
                 {
                     path: "rating",
                     loadChildren: () =>

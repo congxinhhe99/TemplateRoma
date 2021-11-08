@@ -39,7 +39,6 @@ import { SliderModule } from "primeng/slider";
 import { ChartModule } from "primeng/chart";
 import { RatingModule } from "primeng/rating";
 import { ProgressBarModule } from "primeng/progressbar";
-import { InputLayoutComponent } from "./input-layout/input-layout.component";
 import { ChipsModule } from "primeng/chips";
 import { InputNumberModule } from "primeng/inputnumber";
 import { CalendarModule } from "primeng/calendar";
@@ -57,7 +56,6 @@ import { SelectButtonModule } from "primeng/selectbutton";
         HomeComponent,
         AppConfigComponent,
         FormLayoutComponent,
-        InputLayoutComponent,
     ],
     imports: [
         FormsModule,
@@ -92,6 +90,7 @@ import { SelectButtonModule } from "primeng/selectbutton";
         MultiSelectModule,
         ToggleButtonModule,
         SelectButtonModule,
+        
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

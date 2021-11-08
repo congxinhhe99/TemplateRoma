@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+    selector:'app-radio-button',
     templateUrl: './radiobuttondemo.html'
 })
 export class RadioButtonDemo {
