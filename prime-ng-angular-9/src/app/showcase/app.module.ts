@@ -48,7 +48,8 @@ import { ListboxModule } from "primeng/listbox";
 import { MultiSelectModule } from "primeng/multiselect";
 import { ToggleButtonModule } from "primeng/togglebutton";
 import { SelectButtonModule } from "primeng/selectbutton";
-
+import { InvalidStateComponent } from './invalid-state/invalid-state.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
     declarations: [
@@ -56,6 +57,8 @@ import { SelectButtonModule } from "primeng/selectbutton";
         HomeComponent,
         AppConfigComponent,
         FormLayoutComponent,
+        InvalidStateComponent,
+        ListComponent,
     ],
     imports: [
         FormsModule,

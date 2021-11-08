@@ -2,6 +2,7 @@ import { FormLayoutComponent } from "./form-layout/form-layout.component";
 import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
 import { HomeComponent } from "./components/home/home.component";
+import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
 
 @NgModule({
     imports: [
@@ -9,6 +10,7 @@ import { HomeComponent } from "./components/home/home.component";
             [
                 { path: "", component: HomeComponent },
                 { path: "form-layout", component: FormLayoutComponent },
+                { path: "invalid-state", component: InvalidStateComponent },
                 {
                     path: "input-layout",
                     loadChildren: () =>
