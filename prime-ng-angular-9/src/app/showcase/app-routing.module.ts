@@ -1,10 +1,24 @@
-import { MiscModule } from './misc/misc.module';
-import { MiscComponent } from './misc/misc.component';
+import { MiscModule } from "./misc/misc.module";
+import { MiscComponent } from "./misc/misc.component";
 import { FormLayoutComponent } from "./form-layout/form-layout.component";
 import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
 import { HomeComponent } from "./components/home/home.component";
 import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
+import { DisplayComponent } from "./components/display/display.component";
+import { ElenvationComponent } from "./components/elenvation/elenvation.component";
+import { FlexboxComponent } from "./components/flexbox/flexbox.component";
+import { TextComponent } from "./components/text/text.component";
+import { WidgetsComponent } from "./components/widgets/widgets.component";
+import { FlexGridDemo } from "./components/flexgrid/flexgriddemo";
+import { SpacingComponent } from "./components/spacing/spacing.component";
+import { TypographyComponent } from "./components/typography/typography.component";
+import { CrudComponent } from "./components/crud/crud.component";
+import { TimelineComponent } from "./components/timeline/timeline.component";
+import { LoginComponent } from "./components/login/login.component";
+import { ErrorComponent } from "./components/error/error.component";
+import { NotFoundComponent } from "./components/not-found/not-found.component";
+import { DocumentsComponent } from "./components/documents/documents.component";
 
 @NgModule({
     imports: [
@@ -13,12 +27,33 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                 { path: "", component: HomeComponent },
                 { path: "form-layout", component: FormLayoutComponent },
                 { path: "invalid-state", component: InvalidStateComponent },
+                { path: "display", component: DisplayComponent },
+                { path: "elenvation", component: ElenvationComponent },
+                { path: "flexbox", component: FlexboxComponent },
+                { path: "text", component: TextComponent },
+                { path: "spacing", component: SpacingComponent },
+                { path: "typography", component: TypographyComponent },
+                { path: "crud", component: CrudComponent },
+                { path: "timeline", component: TimelineComponent },
+                { path: "login", component: LoginComponent },
+                { path: "error", component: ErrorComponent },
+                { path: "404", component: NotFoundComponent },
+                { path: "documents", component: DocumentsComponent },
+
+                { path: "widgets", component: WidgetsComponent },
                 {
                     path: "input-layout",
                     loadChildren: () =>
                         import("./input-layout/input-layout.module").then(
                             (m) => m.InputLayoutModule
                         ),
+                },
+                {
+                    path: "grid",
+                    loadChildren: () =>
+                        import(
+                            "../showcase/components/flexgrid/flexgriddemo.module"
+                        ).then((m) => m.FlexGridDemoModule),
                 },
                 {
                     path: "float-label",
@@ -359,9 +394,7 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                 {
                     path: "misc",
                     loadChildren: () =>
-                        import("./misc/misc.module").then(
-                            (m) => m.MiscModule
-                        ),
+                        import("./misc/misc.module").then((m) => m.MiscModule),
                 },
 
                 {
@@ -435,7 +468,6 @@ import { InvalidStateComponent } from "./invalid-state/invalid-state.component";
                         ).then((m) => m.PasswordDemoModule),
                 },
 
-              
                 {
                     path: "progressspinner",
                     loadChildren: () =>

@@ -1,0 +1,7 @@
+<div class="p-grid">
+    <div class="p-col" *ngFor="let box of boxes; index as i">
+        <div [class]="'box p-shadow-' + (i + 1)">
+            p-shadow-{{i + 1}}
+        </div>
+    </div>
+</div>

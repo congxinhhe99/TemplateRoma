@@ -341,134 +341,164 @@ export class AppComponent implements OnInit {
             {
                 label: "List",
                 icon: "pi pi-fw pi-list",
-                routerLink:['list']
+                routerLink: ["list"],
             },
             {
                 label: "Tree",
                 icon: "pi pi-fw pi-share-alt",
-                routerLink:['tree']
+                routerLink: ["tree"],
             },
             {
                 label: "Panel",
                 icon: "pi pi-fw pi-tablet",
-                routerLink:['panel']
+                routerLink: ["panel"],
             },
             {
                 label: "Overlay",
                 icon: "pi pi-fw pi-clone",
-                routerLink:['overlaypanel']
+                routerLink: ["overlaypanel"],
             },
             {
                 label: "Media",
                 icon: "pi pi-fw pi-image",
-                routerLink:['media']
+                routerLink: ["media"],
             },
             {
                 label: "Menu",
                 icon: "pi pi-fw pi-bars",
-                routerLink:['menu']
+                routerLink: ["menu"],
             },
             {
                 label: "Message",
                 icon: "pi pi-fw pi-comment",
-                routerLink:['messages']
+                routerLink: ["messages"],
             },
             {
                 label: "File",
                 icon: "pi pi-fw pi-file",
-                routerLink:['fileupload']
+                routerLink: ["fileupload"],
             },
             {
                 label: "Chart",
                 icon: "pi pi-fw pi-chart-bar",
-                routerLink:['chart']
+                routerLink: ["chart"],
             },
             {
                 label: "Misc",
                 icon: "pi pi-fw pi-circle-off",
-                routerLink:['misc']
+                routerLink: ["misc"],
             },
         ];
         this.menuSideBarUtilities = [
             {
                 label: "Display",
                 icon: "pi pi-fw pi-desktop",
+                routerLink: "display",
             },
             {
                 label: "Elevation",
                 icon: "pi pi-fw pi-external-link",
+                routerLink: "elenvation",
             },
             {
                 label: "FlexBox",
                 icon: "pi pi-fw pi-directions",
+                routerLink: "flexbox",
+            },
+            {
+                label: "Icons",
+                icon: "pi pi-fw pi-search",
+                routerLink: "icons",
             },
             {
                 label: "Text",
                 icon: "pi pi-fw pi-search",
+                routerLink: "text",
             },
             {
                 label: "Widgets",
                 icon: "pi pi-fw pi-star-o",
+                routerLink: "widgets",
             },
             {
                 label: "Grid System",
                 icon: "pi pi-fw pi-th-large",
+                routerLink: "grid",
             },
             {
                 label: "Spacing",
                 icon: "pi pi-fw pi-arrow-right",
+                routerLink: "spacing",
             },
             {
                 label: "Typography",
                 icon: "pi pi-fw pi-align-center",
+                routerLink: "typography",
             },
         ];
         this.menuSideBarPages = [
             {
                 label: "Crud",
                 icon: "pi pi-fw pi-pencil",
+                routerLink: "crud",
             },
             {
                 label: "Calendar",
                 icon: "pi pi-fw pi-calendar-plus",
+                routerLink: "fullcalendar",
             },
             {
                 label: "Timeline",
                 icon: "pi pi-fw pi-calendar",
+                routerLink: "timeline",
             },
             {
                 label: "Landing",
                 icon: "pi pi-fw pi-globe",
+
+                url: "https://www.primefaces.org/roma-ng/assets/pages/landing.html",
+                target: "_blank",
             },
             {
                 label: "Login",
                 icon: "pi pi-fw pi-sign-in",
+                routerLink:'login'
             },
             {
                 label: "Error",
                 icon: "pi pi-fw pi-exclamation-triangle",
+                routerLink:'error'
             },
             {
                 label: "404",
                 icon: "pi pi-fw pi-times",
+                url:'https://www.primefaces.org/roma-ng/#/404',
+                target:'_blank'
             },
             {
                 label: "Access Denied",
                 icon: "pi pi-fw pi-ban",
+                url:'https://www.primefaces.org/roma-ng/#/accessdenied',
+                target:'_blank'
+
             },
             {
                 label: "Empty",
                 icon: "pi pi-fw pi-clone",
+                url:'https://www.primefaces.org/roma-ng/#/pages/empty',
+                target:'_blank'
             },
         ];
         this.menuSideBarbuynow = [
             {
                 label: "Buy Now",
                 icon: "pi pi-fw pi-shopping-cart",
+                url:'https://www.primefaces.org/store/'
             },
             {
                 label: "Documentation",
                 icon: "pi pi-fw pi-info-circle",
+                url:'https://www.primefaces.org/roma-ng/#/documentation'
             },
         ];
     }

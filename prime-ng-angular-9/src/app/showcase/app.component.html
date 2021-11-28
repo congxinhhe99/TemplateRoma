@@ -23,32 +23,7 @@
                         <span class="layout-profile-role">Design Ops</span>
                     </div>
                 </a>
-                <!-- <ul class="fadeInDown"  #menu [popup]="true" [model]="items">
-                    <li>
-                        <a href="#">
-                            <i class="pi pi-user"></i>
-                            <span>Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="pi pi-cog"></i>
-                            <span>Settings</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="pi pi-envelope"></i>
-                            <span>Messages</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="pi pi-bell"></i>
-                            <span>Notifications</span>
-                        </a>
-                    </li>
-                </ul> -->
+               
             </li>
             <li (click)="menuNotifications.toggle($event)">
                 <a href="#" class="layout-topbar-icon">
@@ -56,49 +31,6 @@
                 </a>
 
 
-                <!-- <ul class="fadeInDown">
-                    <li role="menuitem">
-                        <a href="#"><img id="j_idt21" src="/roma/javax.faces.resource/images/avatar/avatar-1.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
-                            <div class="topbar-menu-info">
-                                <span class="topbar-menu-name">Bithika Abhedananda</span>
-                                <span class="topbar-menu-role">User interface review is done.</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#"><img id="j_idt23" src="/roma/javax.faces.resource/images/avatar/avatar-2.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
-                            <div class="topbar-menu-info">
-                                <span class="topbar-menu-name">Dai Jiang</span>
-                                <span class="topbar-menu-role">Uh, we have sort of a problem here.</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#"><img id="j_idt25" src="/roma/javax.faces.resource/images/avatar/avatar-3.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
-                            <div class="topbar-menu-info">
-                                <span class="topbar-menu-name">Karlien Nijhuis</span>
-                                <span class="topbar-menu-role">You apparently didn’t put the thing</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#"><img id="j_idt27" src="/roma/javax.faces.resource/images/avatar/avatar-4.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
-                            <div class="topbar-menu-info">
-                                <span class="topbar-menu-name">Tom Chun</span>
-                                <span class="topbar-menu-role">Please check the files</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#"><img id="j_idt29" src="/roma/javax.faces.resource/images/avatar/avatar-5.png.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0?ln=roma-layout" alt="">
-                            <div class="topbar-menu-info">
-                                <span class="topbar-menu-name">Maria Trofimova</span>
-                                <span class="topbar-menu-role">Meeting reports attached.</span>
-                            </div>
-
-                        </a>
-                    </li>
-                </ul> -->
             </li>
         </ul>
         <p-menu styleClass="personal" #menu [popup]="true" [model]="items"></p-menu>
@@ -118,16 +50,9 @@
                             <div class="layout-menu-tooltip-arrow"></div>
                             <div class="layout-menu-tooltip-text">Favorites</div>
                         </div>
-                        <!-- <ul role="menu">
-                            <li id="menuform:om_dashboard" role="menuitem"><a href="/roma/dashboard.xhtml;jsessionid=node0rm6s2flxdr051sezlh62sx45l4430437.node0"><i class="pi pi-fw pi-home layout-menuitem-icon"></i><span class="layout-menuitem-text">Dashboard</span></a>
-                                <div class="layout-menu-tooltip">
-                                    <div class="layout-menu-tooltip-arrow"></div>
-                                    <div class="layout-menu-tooltip-text">Dashboard</div>
-                                </div>
-                            </li>
-                        </ul> -->
+                       
                     </li>
-                    <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarFr [model]="menuSideBarFavorites" [popup]="true"></p-tieredMenu>
+                    <p-tieredMenu styleClass="menufavorite" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarFr [model]="menuSideBarFavorites" [popup]="true"></p-tieredMenu>
                     <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarUI [model]="menuSideBarUI" [popup]="true"></p-tieredMenu>
                     <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarUtilities [model]="menuSideBarUtilities" [popup]="true"></p-tieredMenu>
                     <p-tieredMenu styleClass="menucus" [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #sidebarPages [model]="menuSideBarPages" [popup]="true"></p-tieredMenu>
